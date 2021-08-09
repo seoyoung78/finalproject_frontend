@@ -1,0 +1,59 @@
+.Patient {
+  padding: 1%;
+  padding-bottom: 0;
+}
+
+/* 좌측 컴포넌트 */
+.Patient_left {
+  width: 60%;
+  margin-right: 1%;
+}
+
+/* 우측 컴포넌트 */
+.Patient_right {
+  width: 39%;
+  padding: 0;
+}
+
+/* title */
+.Patient_title {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* PatientList */
+.PatientList {
+  height: 100%;
+}
+
+.PatientList_content {
+  padding: 10px;
+  height: 96.8%;
+}
+
+.PatientList_Table {
+  background-color: lightgray;
+  height: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.PatientList_tr {
+  display: flex;
+  border-bottom: lightgray solid 0.5px;
+  align-items: center;
+}
+
+.PatientList_tr:hover {
+  background-color: #cff1ff;
+  cursor: pointer;
+}
+
+/* PatientUpdateForm & PatientCreateForm */
+.Patient_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}

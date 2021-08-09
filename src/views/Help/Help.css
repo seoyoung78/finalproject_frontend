@@ -1,0 +1,58 @@
+.Help {
+  margin-bottom: 2rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* user_guide */
+.user_guide {
+  width: 14rem;
+  height: 15rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  background-color: #0070C0;
+  font-size: 1.5rem;  
+}
+.user_guide_a {
+  color: white;
+}
+.user_guide_a:hover {
+  color: white;
+  text-decoration-line: none;
+}
+.user_guide_explain {
+  font-size: 0.7rem;
+  text-align: center;
+}
+
+/* online_center */
+.online_center {
+  width: 14rem;
+  height: 15rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  background-color: #0283EE;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/* as */
+.as {
+  width: 14rem;
+  height: 15rem;
+  padding: 1rem;
+  background-color: #65BFF7;
+  font-size: 1.5rem;
+}
+
+/* icon */
+.icon {
+  color: white;
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.icon1:hover {
+  color: #65BFF7;
+}

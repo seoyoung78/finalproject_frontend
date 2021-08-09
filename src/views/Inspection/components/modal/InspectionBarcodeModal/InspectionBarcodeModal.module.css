@@ -1,0 +1,85 @@
+.InspectionModal > .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.InspectionModal > .modal > section {
+  /* width: 800px;
+  height: 400px; */
+  max-width: 800px;
+  max-height: 600px;
+  margin:0 auto;
+  border-radius: .3rem;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-show .3s;
+  overflow: hidden;
+  background-color: white;
+}
+.InspectionModal > .modal.openModal {
+  display: flex;
+  align-items: center;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-bg-show .3s;
+}
+@keyframes modal-show {
+  from {
+      opacity: 0;
+      margin-top: -50px;
+  }
+  to {
+      opacity: 1;
+      margin-top: 0;
+  }
+}
+@keyframes modal-bg-show {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+/* InspectionBarcodePop */
+.InspectionBarcodePop{
+  height: 100%;
+}
+.InspectionBarcodePop_title{
+  display: flex;
+  justify-content: center;
+  font-size: x-large;
+  font-weight: bold;
+  margin: 0.5rem;
+}
+.InspectionBarcodePop_1{
+  /* border: 1px solid black; */
+  padding: 10px;
+  height: 90%;
+}
+.InspectionBarcodePop_1_1{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  height: 40%;
+  margin-bottom: 10px;
+}
+.InspectionBarcodePop_1_2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid black; */
+  margin-bottom: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.InspectionBarcodePop_1_3{
+  display: flex;
+  justify-content: center;
+}

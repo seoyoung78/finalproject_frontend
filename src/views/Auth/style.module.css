@@ -1,0 +1,98 @@
+.Auth {
+  color: black;
+  cursor: default;
+}
+
+.Auth_box{
+  width: 90%;
+}
+
+.Auth_content {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: lightgray solid 0.5px;
+}
+
+.Auth_content2 {
+  display: flex;
+  align-items: center;
+}
+
+.Auth_password {
+  font-family: 'Malgun gothic', sans-serif;
+}
+
+/* 유효성 검사 */
+.Auth_error {  
+  color: red;
+  font-size: small;
+}
+.Auth_noterror {
+  visibility: hidden;
+  font-size: small;
+}
+
+/* 모달 css*/
+.Auth_header {
+  display: flex;
+  font-size: larger;
+  justify-content: space-between;
+  padding: 1rem;
+  font-weight: bold;
+  background-color: #f1f1f1;
+}
+
+.Auth > .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.Auth > .modal > section {
+  width: 100%;
+  max-width: 750px; 
+  height: 100%;
+  max-height: 910px;
+  margin:0 auto;
+  border-radius: .3rem;
+  background-color: #fff;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-show .3s;
+  overflow: hidden;
+}
+
+.Auth > .modal > section > main {
+  padding: 16px;
+  border-bottom: 1px solid #dee2e6;
+  border-top: 1px solid #dee2e6;
+}
+.Auth > .modal.openModal {
+  display: flex;
+  align-items: center;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-bg-show .3s;
+}
+@keyframes modal-show {
+  from {
+      opacity: 0;
+      /* margin-top: -50px; */
+  }
+  to {
+      opacity: 1;
+      margin-top: 0;
+  }
+}
+@keyframes modal-bg-show {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

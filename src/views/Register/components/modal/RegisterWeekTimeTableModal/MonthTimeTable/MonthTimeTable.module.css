@@ -1,0 +1,118 @@
+.MonthTimeTable{
+  display: flex;
+  flex-direction: column;
+}
+.yearAndMonth{
+  margin: 20px;
+  text-align: center;
+  font-size: x-large;
+  text-decoration: #00aaf0 underline;
+  text-underline-position:under;
+}
+.MonthTimeTable_btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.MonthTimeTable_btn{
+  margin-left: 30px!important;
+  margin-right: 30px!important;
+  width: 35px;
+  height: 35px;
+}
+.MonthTimeTable_btnToday{
+  margin-left: 30px!important;
+  margin-right: 30px!important;
+  width: 50px;
+  height: 35px;
+}
+.days{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.day{
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 30px;
+  margin-left: 38px!important;
+  margin-right: 30px!important;
+}
+.dayN{
+  color: black!important;
+}
+.divisionLine{
+  height: 20px;
+  border-bottom: 1px solid #00aaf0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.divisionLine2{
+  display: none;
+}
+.dates{
+  display: flex;
+  flex-flow: row wrap;
+  width: 850px;
+  height: 600px;
+  border-right: 1px solid #00aaf0;
+  border-bottom: 1px solid #00aaf0;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.date{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: calc(100% / 7);
+  text-align: right;
+  padding: 12px;
+  border-top: 1px solid #00aaf0;
+  border-left: 1px solid #00aaf0;
+}
+.day:nth-child(7n + 1),
+.date:nth-child(7n + 1) {
+  color: #df2d2d;
+}
+
+.day:nth-child(7n),
+.date:nth-child(7n) {
+  color: #00aaf0;
+}
+.thisDate{
+  text-align: center;
+  width: 23px;
+  height: 23px;
+  border: #00aaf0 1px solid;
+  background-color: #00aaf0;
+  color: white;
+  border-radius: 20px;
+}
+.otherDate{
+  text-align: center;
+  width: 23px;
+  height: 23px;
+}
+.otherDate1{
+  text-align: center;
+  width: 23px;
+  height: 23px;
+  opacity: 0.4;
+}
+.otherDate2{
+  text-align: center;
+  width: 23px;
+  height: 23px;
+  opacity: 0.4;
+}
+.count{
+  color: black;
+  margin-top: 20px;
+  margin-right: 10px;
+}
+.count_font{
+  margin-top: 10px;
+  font-size: 2px;
+}

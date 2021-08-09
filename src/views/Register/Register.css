@@ -1,0 +1,928 @@
+/* Register 컴포넌트 배치 CSS */
+
+.Register {
+  display: flex;
+  flex-direction: column;
+  margin: 1% 1% 1% 1%;
+}
+.Register_1 {
+  display: flex;
+  flex-direction: row;
+  /* background-color: blue; */
+  height: 40%;
+}
+.Register_2 {
+  height: 50%;
+}
+.Register_2_header {
+  margin-top: 5px;
+  font-size: larger;
+  font-weight: bold;
+}
+.Register_Components {
+  display: flex;
+  flex-direction: column;
+  /* background-color: blueviolet; */
+  height: 100%;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+/* RegisterList */
+
+.RegisterList {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  /* background-color: aqua; */
+  /* margin: 1% 1% 1% 1%; */
+  height: 100%;
+}
+.RegisterList_header {
+  display: flex;
+  flex-direction: row;
+}
+.RegisterList_header_content {
+  flex-grow: 9;
+  font-size: larger;
+  font-weight: bold;
+}
+.RegisterList_header_button {
+  flex-grow: 3;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+.RegisterList_content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-top: 3px;
+  padding: 10px 10px 0 10px;
+}
+.RegisterList_content_1 {
+  display: flex;
+  flex-direction: row;
+  margin: 3px;
+}
+.RegisterList_content_1_1 {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 4;
+  font-size: small;
+}
+.RegisterList_content_1_2 {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 4;
+  justify-content: space-between;
+}
+.RegisterList_content_1_2_total{
+  color: black;
+}
+.RegisterList_content_1_2_total:hover{
+  cursor: pointer;
+}
+.RegisterList_content_1_2_ready {
+  color: #009900;
+}
+.RegisterList_content_1_2_ready:hover{
+  cursor: pointer;
+}
+.RegisterList_content_1_2_finish {
+  color: #00aaf0;
+}
+.RegisterList_content_1_2_finish:hover{
+  cursor: pointer;
+}
+.RegisterList_content_1_2_cancel {
+  color: #ff6600;
+}
+.RegisterList_content_1_2_cancel:hover{
+  cursor: pointer;
+}
+.RegisterList_content_1_3 {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 4;
+  justify-content: flex-end;
+}
+.RegisterList_content_2 {
+  margin-top: 5px;
+  text-align: center;
+  font-size: small;
+  overflow-y: scroll;
+  height: 250px;
+}
+.RegisterList_content_2::-webkit-scrollbar {
+  width: 10px;
+}
+.RegisterList_content_2::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.RegisterList_content_2::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+.RegisterList_content_2_tr:hover {
+  background-color: #cff1ff;
+  cursor: pointer;
+}
+.RegisterList_content_2_tr_td_ready {
+  color: #009900;
+}
+/* .RegisterList_content_2_tr_td_ready:hover {
+  color: white;
+} */
+.RegisterList_content_2_tr_td_finish {
+  color: #00aaf0;
+}
+/* .RegisterList_content_2_tr_td_finish:hover {
+  color: white;
+} */
+.RegisterList_content_2_tr_td_cancel {
+  color: #ff6600;
+}
+/* .RegisterList_content_2_tr_td_cancel:hover {
+  color: white;
+} */
+thead {
+  background-color: lightgray;
+  position: sticky;
+  top: -1px;
+}
+/* RegisterRead */
+.RegisterRead {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100% !important;
+  /* background-color: brown; */
+  margin: 3px 0 0 1%;
+}
+.RegisterRead_header {
+  font-size: larger;
+  font-weight: bold;
+}
+.RegisterRead_content {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  height: 300px;
+}
+.RegisterRead_content_form {
+  width: 100%;
+}
+.RegisterRead_content_list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.RegisterRead_content_list_label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 38%;
+  margin-left: 30px;
+}
+.RegisterRead_content_list_input {
+  display: flex;
+  width: 62%;
+}
+.RegisterRead_content_list_input > input,
+select {
+  width: 95%;
+}
+.RegisterRead_content_list_input_readOnly {
+  border: none;
+}
+.RegisterRead_content_list_input_readOnly:focus {
+  outline: none;
+}
+.RegisterRead_content_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 22px 14px 14px 14px;
+}
+
+/* RegisterUpdateForm */
+.RegisterUpdateForm {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  height: 100% !important;
+  /* background-color: brown; */
+  margin: 3px 0 1% 1%;
+}
+.RegisterUpdateForm_header {
+  font-size: larger;
+  font-weight: bold;
+}
+.RegisterUpdateForm_content {
+  display: flex;
+  flex-direction: row;
+  font-size: small;
+  height: 300px;
+}
+.RegisterUpdateForm_content_form {
+  width: 100%;
+}
+.RegisterUpdateForm_content_list {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.RegisterUpdateForm_content_list_label {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 38%;
+  margin-left: 30px;
+}
+.RegisterUpdateForm_content_list_input {
+  display: flex;
+  width: 62%;
+}
+.RegisterUpdateForm_content_list_input > input,
+select {
+  width: 95%;
+}
+.RegisterUpdateForm_content_list_input_readOnly {
+  border: none;
+}
+.RegisterUpdateForm_content_list_input_readOnly:focus {
+  outline: none;
+}
+.RegisterUpdateForm_content_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 13px;
+}
+.RegisterUpdateForm_content_list_input >.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+    display: block;
+    width: 97.5%;
+}
+
+/* RegisterPatientList */
+.RegisterPatientList {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+.RegisterPatientList_header {
+  font-size: medium;
+  font-weight: bold;
+}
+.RegisterPatientList_search {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  padding: 10px 0 10px 0;
+}
+.RegisterPatientList_search_input {
+  display: flex;
+  font-size: small;
+  flex-grow: 3;
+}
+.RegisterPatientList_search_input_1 {
+  width: 100%;
+  display: flex;
+}
+.RegisterPatientList_search_button {
+  display: flex;
+  flex-grow: 9;
+  align-items: center;
+}
+.RegisterPatientList_content {
+  text-align: center;
+  padding: 10px;
+  height: 100%;
+}
+.RegisterPatientList_content_table {
+  font-size: small;
+  overflow-y: scroll;
+  height: 310px;
+}
+.RegisterPatientList_content_table_tr:hover {
+  background-color: #cff1ff;
+  cursor: pointer;
+}
+
+/* RegisterCreateForm */
+.RegisterCreateForm {
+  flex-grow: 1;
+  /* background-color: crimson; */
+  margin: 28px 1% 0 1%;
+  font-size: small;
+}
+.RegisterCreateForm_content {
+  padding: 10px;
+}
+
+.RegisterCreateForm_cal {
+  display: flex;
+  justify-content: center;
+  zoom: 80%;
+}
+.RegisterCreateForm_input {
+}
+.RegisterCreateForm_input_select {
+  width: 100%;
+}
+.RegisterCreateForm_input_textarea {
+  width: 100%;
+  resize: none;
+}
+.RegisterCreateForm_button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* RegisterTimeTable */
+.RegisterTimeTable {
+  /* background-color: darksalmon; */
+  flex-grow: 8;
+  margin: 3px 1% 3px 1%;
+  height: 100%;
+}
+.RegisterTimeTable_content {
+  font-size: small;
+  text-align: center;
+}
+.RegisterTimeTable_content td,
+th {
+  padding: 7.5px !important;
+}
+
+/* RegisterTimeSchedule */
+.RegisterTimeSchedule {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: small;
+}
+.RegisterTimeSchedule_header {
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+.RegisterTimeSchedule_header_btn{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-grow: 2;
+}
+.RegisterTimeSchedule_content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.RegisterTimeSchedule_content_title {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.RegisterTimeSchedule_content_title_today {
+  border: solid 0.5px #dee2e6;
+  font-size: smaller;
+  overflow: auto;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_title_today::selection{
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.RegisterTimeSchedule_content_title_today input::selection{
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.RegisterTimeSchedule_content_title_today .react-datepicker-wrapper{
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_title_today .react-datepicker__input-container {
+  width: 50px !important;
+  height: 100px !important;
+  text-align: center;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_title_today input {
+  width: 50px !important;
+  height: 100px !important;
+  border: solid 0.5px #dee2e6 !important;
+  text-align: center;
+  /* cursor: pointer; */
+}
+.RegisterTimeSchedule_content_title_today input:focus {
+  width: 50px !important;
+  height: 100px !important;
+  outline: solid 0.5px #dee2e6 !important;
+  border: solid 0.5px #dee2e6 !important;
+  /*  cursor: pointer; */
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_title_today .react-datepicker-ignore-onclickoutside {
+  width: 50px !important;
+  height: 100px !important;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_title_hours {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+}
+.RegisterTimeSchedule_content_title_hours_hour {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100px;
+}
+.RegisterTimeSchedule_content_title_hours_hour_upside {
+  border: solid 0.5px #dee2e6;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_title_hours_hour_upside::selection {
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.RegisterTimeSchedule_content_title_hours_hour_downside {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_title_hours_hour_downside_content {
+  border: solid 0.5px #dee2e6;
+  width: 50px;
+  border-bottom: solid 2px #00aaf0;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_title_hours_hour_downside_content::selection {
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.RegisterTimeSchedule_content_title_hours_hour_downside_content_today {
+  border: solid 2px #dee2e6;
+  background-color: #00aaf0;
+  width: 50px;
+  font-weight: bold;
+  color: #dee2e6;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_title_hours_hour_downside_content_today::selection {
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.RegisterTimeSchedule_content_timetable {
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  height: 250px;
+  overflow-y: scroll;
+}
+.RegisterTimeSchedule_content_timetable::-webkit-scrollbar {
+  display: none;
+}
+.RegisterTimeSchedule_content_timetable_doctors {
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  font-size: x-small;
+}
+.RegisterTimeSchedule_content_timetable_doctors_doctor {
+  text-align: center;
+  line-height: 50px;
+  width: 50px !important;
+  border: solid 0.5px #dee2e6;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_timetable_doctors_doctor::selection {
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers {
+  display: flex;
+  flex-direction: row;
+  border: solid 0.5px #dee2e6;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_group{
+  display: flex;
+  flex-direction: row;
+  width: 200px;
+  height: 50px;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_register {
+  border: solid 0.5px #dee2e6;
+  width: 50px;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_register_nothing{
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_register:hover {
+  background-color: #cff1ff;
+  width: 50px;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_register_ready {
+  line-height: 20px;
+  background-color: #18e273;
+  height: 100%;
+  color: black;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_register_ready::selection {
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_register_ready:hover {
+  cursor: pointer;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_register_success {
+  line-height: 20px;
+  background-color: #00aaf0;
+  height: 100%;
+  color: black;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_register_success::selection {
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_register_success:hover {
+  cursor: pointer;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_register_cancel {
+  line-height: 20px;
+  background-color: #ff6600;
+  height: 100%;
+  color: black;
+  border-radius: 5px;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_register_cancel::selection {
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.RegisterTimeSchedule_content_timetable_doctors_registers_register_cancel:hover {
+  cursor: pointer;
+}
+.tip_normal:hover {
+  position: relative
+}
+.tip_normal span {
+  display: none
+}
+.tip_normal:hover span {
+  border: #cff1ff 1px solid;
+  padding: 5px 20px 5px 5px;
+  display: block;
+  z-index: 100;
+  left: 0px;
+  margin: 10px;
+  width: 150px;
+  position: absolute;
+  top: 8px;
+  font-size: medium;
+}
+.tip_upside:hover {
+  position: relative
+}
+.tip_upside span {
+  display: none
+}
+.tip_upside:hover span {
+  top: -50px!important;
+  border: #cff1ff 1px solid;
+  padding: 5px 20px 5px 5px;
+  display: block;
+  z-index: 100;
+  left: 0px;
+  margin: 10px;
+  width: 150px;
+  position: absolute;
+  font-size: medium;
+}
+.tip_rightside:hover {
+  position: relative
+}
+.tip_rightside span {
+  display: none
+}
+.tip_rightside:hover span {
+  top: 20px!important;
+  left: -120px!important;
+  border: #cff1ff 1px solid;
+  padding: 5px 20px 5px 5px;
+  display: block;
+  z-index: 100;
+  left: 0px;
+  margin: 10px;
+  width: 150px;
+  position: absolute;
+  font-size: medium;
+}
+.tip_uprightside:hover {
+  position: relative
+}
+.tip_uprightside span {
+  display: none
+}
+.tip_uprightside:hover span {
+  top: -50px!important;
+  left: -120px!important;
+  border: #cff1ff 1px solid;
+  padding: 5px 20px 5px 5px;
+  display: block;
+  z-index: 100;
+  left: 0px;
+  margin: 10px;
+  width: 150px;
+  position: absolute;
+  font-size: medium;
+}
+.balloon_ready {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  height: 60px;
+  background: #18e273;
+  border-radius: 10px;
+}
+.balloon_ready::selection {
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.balloon_ready::after {
+  border-top: 0px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #cff1ff;
+  content:"";
+  position:absolute;
+  top: -8px;
+  left:10px;
+ }
+.tip_upside > .balloon_ready {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  height: 60px;
+  background: #18e273;
+  border-radius: 10px;
+}
+.tip_upside >.balloon_ready::after {
+  border-top: 8px solid #cff1ff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 0px solid transparent;
+  content:"";
+  position:absolute;
+  top: 58px;
+  left:10px;
+ }
+ .tip_rightside > .balloon_ready {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  height: 60px;
+  background: #18e273;
+  border-radius: 10px;
+}
+.tip_rightside >.balloon_ready::after {
+  border-top: 0px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #cff1ff;
+  content:"";
+  position:absolute;
+  top: -8px;
+  left:120px;
+ }
+ .tip_uprightside > .balloon_ready {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  height: 60px;
+  background: #18e273;
+  border-radius: 10px;
+}
+.tip_uprightside >.balloon_ready::after {
+  border-top: 8px solid #cff1ff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 0px solid transparent;
+  content:"";
+  position:absolute;
+  top: 58px;
+  left:120px;
+ }
+ .balloon_success {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  height: 60px;
+  background: #00aaf0;
+  border-radius: 10px;
+}
+.balloon_success::selection {
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.balloon_success::after {
+  border-top: 0px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #cff1ff;
+  content:"";
+  position:absolute;
+  top:-10px;
+  left:10px;
+ }
+ .tip_upside > .balloon_success {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  height: 60px;
+  background: #00aaf0;
+  border-radius: 10px;
+}
+.tip_upside >.balloon_success::after {
+  border-top: 8px solid #cff1ff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 0px solid transparent;
+  content:"";
+  position:absolute;
+  top: 58px;
+  left:10px;
+ }
+ .tip_rightside > .balloon_success {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  height: 60px;
+  background: #00aaf0;
+  border-radius: 10px;
+}
+.tip_rightside >.balloon_success::after {
+  border-top: 0px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #cff1ff;
+  content:"";
+  position:absolute;
+  top: -8px;
+  left:120px;
+ }
+ .tip_uprightside > .balloon_success {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  height: 60px;
+  background: #00aaf0;
+  border-radius: 10px;
+}
+.tip_uprightside >.balloon_success::after {
+  border-top: 8px solid #cff1ff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 0px solid transparent;
+  content:"";
+  position:absolute;
+  top: 58px;
+  left:120px;
+ }
+ .balloon_cancel {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  height: 60px;
+  background: #ff6600;
+  border-radius: 10px;
+}
+.balloon_cancel::selection {
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.balloon_cancel::after {
+  border-top: 0px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #cff1ff;
+  content:"";
+  position:absolute;
+  top:-10px;
+  left:10px;
+ }
+ .tip_upside > .balloon_cancel {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  height: 60px;
+  background: #ff6600;
+  border-radius: 10px;
+}
+.tip_upside >.balloon_cancel::after {
+  border-top: 8px solid #cff1ff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 0px solid transparent;
+  content:"";
+  position:absolute;
+  top: 58px;
+  left:10px;
+ }
+ .tip_rightside > .balloon_cancel {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  height: 60px;
+  background: #ff6600;
+  border-radius: 10px;
+}
+.tip_rightside >.balloon_cancel::after {
+  border-top: 0px solid transparent;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 8px solid #cff1ff;
+  content:"";
+  position:absolute;
+  top: -8px;
+  left:120px;
+ }
+ .tip_uprightside > .balloon_cancel {
+  position: relative;
+  margin: 10px;
+  width: 180px;
+  height: 60px;
+  background: #ff6600;
+  border-radius: 10px;
+}
+.tip_uprightside >.balloon_cancel::after {
+  border-top: 8px solid #cff1ff;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 0px solid transparent;
+  content:"";
+  position:absolute;
+  top: 58px;
+  left:120px;
+ }
+ .hourStyle{
+   color:black;
+ }
+ .hourStyle:nth-child(4n+1){
+  color:#00aaf0;
+}

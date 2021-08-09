@@ -1,0 +1,406 @@
+/* 화면레이아웃 */
+.Treatment {
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+  
+}
+.TreatmentLeft{
+  width: 720px;
+  /* background-color: brown; */
+  /* height: 1080px; */
+}
+
+.TreatmentRight{
+  margin-left: 5px;
+  width: 1150px;
+  /* background-color: burlywood; */
+  /* height: 730px; */
+}
+
+/* TreatmentPatientList */
+.TreatmentPatientList {
+  display: flex;
+  flex-direction: row;
+  /* width: 700px; */
+  /* background-color: lawngreen; */
+  height: 400px;
+}
+
+.TreatmentPatientList_title {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.TreatmentPatientList_border {
+  padding: 10px 10px 0 10px;
+  /* padding: 5% 5px 0 10px; */
+  font-size: small;
+}
+
+.TreatmentPatientList_search {
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  /* margin-left: 2%; */
+  margin-bottom: 1%;
+}
+
+.row_1 {
+
+  margin-left: 20%;
+  cursor: pointer;
+  /* font-size: small; */
+}
+
+.row_2 {
+  color: #009900;
+  margin-left: 3%;
+  cursor: pointer;
+  /* font-size: small; */
+}
+
+.row_3 {
+  color: #00AAF0;
+  margin-left: 3%;
+  cursor: pointer;
+  /* font-size: small; */
+}
+
+.TreatmentPatientList_Totaltable{
+  overflow-y: scroll;
+  height: 300px;
+  width: 680px; 
+}
+
+.TreatmentPatientList_Totaltable::-webkit-scrollbar {
+  width: 10px;
+}
+.TreatmentPatientList_Totaltable::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.TreatmentPatientList_Totaltable::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+.TreatmentPatientList_table {
+  text-align: center;
+  font-size: small;
+}
+
+.TreatmentPatientList_table_thead {
+  position:sticky;
+  top:-1px;
+  background-color: lightgray;
+}
+
+.TreatmentPatientList_table_tr:hover{
+  background-color: #cff1ff;
+  /* color:white; */
+  cursor: pointer;
+}
+
+/* TreatmentHistoryList */
+.TreatmentHistoryList {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: 400px;
+}
+
+.TreatmentHistoryList_title {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.TreatmentHistoryList_border {
+  padding: 10px 10px 0 10px;
+  font-size: small;
+}
+
+.TreatmentHistoryList_Totaltable{
+  overflow-y: scroll;
+  height: 355px;
+  text-align: center;
+}
+
+.TreatmentHistoryList_Totaltable::-webkit-scrollbar {
+  width: 10px;
+}
+.TreatmentHistoryList_Totaltable::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.TreatmentHistoryList_Totaltable::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+
+/* TreatmentCreateForm*/
+.TreatmentCreateForm {
+
+  /* height: 50%; */
+  /* margin-left: 20px; */
+  /* width: 70%; */
+}
+.TreatmentCreateForm_title {
+  margin-bottom: 5px;
+  display: flex;
+  /* flex-direction: row; */
+  font-weight: bold;
+  font-size: larger;
+  justify-content: space-between;
+
+}
+
+.TreatmentCreateForm_title_1 {
+
+}
+.TreatmentCreateForm_title_2 {
+    /* margin-bottom: 5px; */
+}
+
+
+
+.TreatmentCreateForm_border {
+  display: flex;
+  flex-direction: row;
+  height: 780px;
+}
+
+.TreatmentCreateForm_1 {
+  width: 45%;
+  margin: 1%;
+}
+
+.TreatmentCreateForm_1_1_title{
+  font-size: small;
+  text-align: center;
+  font-weight: bold;
+  background-color: lightgray;
+}
+
+.TreatmentCreateForm_1_1_content{
+  width: 100%;
+  height: 100%;
+  resize: none;
+  font-size: small;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.TreatmentCreateForm_2 {
+  width: 50%;
+  margin: 1%;
+}
+
+.TreatmentCreateForm_2_1_border{
+ /* height: 100%; */
+ height: 320px;
+ margin-bottom: 10px;
+ 
+}
+
+.TreatmentCreateForm_2_1_title{
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+  background-color: lightgray;
+
+}
+.TreatmentCreateForm_2_1_content {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 10px 0 10px;
+  /* width: 100%; */
+  /* width: 100%;
+  height: 85%;
+  margin-top: 3%;
+  margin-left: 3%;
+   */
+}
+
+.TreatmentCreateForm_select {
+  font-size: small; 
+  /* margin-right: 2%; */
+  width: 180px;
+  flex-grow: 1;
+}
+.TreatmentCreateForm_select_1{
+  border: 1.8px solid lightgray;
+}
+.TreatmentCreateForm_checkbox {
+  padding: 10px 10px 0 10px;
+  overflow-y: scroll;
+  height: 320px;
+  /* display: flex;
+  flex-direction: column; */
+  border: 1.8px solid lightgray;
+  font-size: small; 
+  width: 65%;
+  height: 250px;
+}
+
+.TreatmentCreateForm_checkbox::-webkit-scrollbar {
+  width: 10px;
+}
+.TreatmentCreateForm_checkbox::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.TreatmentCreateForm_checkbox::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+.TreatmentCreateForm_checkbox_1{
+ 
+  height: 15px;
+  font-size: small;
+  /* display: flex;
+  flex-direction: row; */
+  margin-bottom: 5px;
+  /* margin-top: 2%;
+  margin-left: 4%; */
+}
+
+
+.TreatmentCreateForm_2_2_border{
+  height: 410px;
+  font-size: small;
+ }
+
+.TreatmentCreateForm_2_2_title{
+  /* margin-top: 15px; */
+  font-weight: bold;
+  font-size: small;
+  text-align: center;
+  background-color: lightgray;
+  
+}
+
+.TreatmentCreateForm_2_2_content{
+  padding: 13px 10px 0 10px;
+
+}
+
+.TreatmentSearch_1{
+
+  margin-bottom: 12px;
+  /* margin-bottom: 7px; */
+}
+.TreatmentSearch_1_1{
+  width: 230px;
+}
+.TreatmentSearch_1_1_1{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+}
+.TreatmentSearch_1_2_1{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  margin:1% 1% 1% 2%;
+}
+.TreatmentSearch_1_2_1:hover{
+  color: #00AAF0;
+}
+
+.TreatmentSearch_1_2_2{
+  cursor: pointer;
+ display: flex;
+  flex-direction: row;
+  margin: 1%;
+}
+.TreatmentSearch_1_2_2:hover{
+  color: #00AAF0;
+}
+.TreatmentSearch_1_2_3{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+}
+.TreatmentSearch_1_2_3:hover{
+  color: #00AAF0;
+}
+.TreatmentSearch_1_2_4{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  margin: 1%;
+}
+.TreatmentSearch_1_2_4:hover{
+  color: #00AAF0;
+}
+.TreatmentSearch_2_Totaltable{
+  overflow-y: scroll;
+  height: 320px;
+  /* width: 230px; */
+  /* background-color: aquamarine; */
+
+  text-align: center;
+}
+
+.TreatmentSearch_2_Totaltable::-webkit-scrollbar {
+  width: 10px;
+}
+.TreatmentSearch_2_Totaltable::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.TreatmentSearch_2_Totaltable::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+
+
+.TreatmentSearch_2_2_tr:hover{
+ 
+  background-color: #cff1ff;
+  /* color:white; */
+  cursor: pointer;
+}
+
+.TreatmentSearch_3{
+  /* margin-bottom: 10px; */
+  text-align: right;
+  margin-right: 10px;
+}
+
+
+
+.TreatmentPatientList_table_tr:hover{
+  background-color: #cff1ff;
+  /* color:white; */
+  cursor: pointer;
+}
+
+
+.TreatmentHistoryList_table_thead {
+  background-color: lightgray;
+  position:sticky;
+  top:-1px;
+}
+ .TreatmentHistoryList_table_tr:hover{
+  background-color: #cff1ff;
+  /* color:white; */
+  cursor: pointer;
+ }
+
+
+
+

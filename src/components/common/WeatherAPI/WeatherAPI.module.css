@@ -1,0 +1,24 @@
+ /* WeatherAPI */
+ .WeatherAPI{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  flex-grow: 10;
+  margin-right: 50px;
+}
+.WeatherAPI_items {
+ display: flex;
+ flex-direction: row;
+ justify-content: flex-end;
+ align-items: center;
+ margin-right: 30px;
+}
+.WeatherAPI_item {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin-left: 20px;
+  line-height: 10px;
+  color: white;
+}

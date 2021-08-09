@@ -1,0 +1,152 @@
+.header{
+  height: 110px;
+  font-family: 'GmarketSansMedium', sans-serif!important;
+}
+.header1{
+  display: flex;
+  height: 60px;
+  background-color: #00AAF0;
+  flex-direction: row;
+  align-items: center;
+}
+.header2{
+  height: 50px;
+  background-color: #2D3040;
+  color: white;
+  align-items: center;
+  padding-left: 30px;
+}
+.header1_1{
+  width: 10%;
+  padding-left: 30px;
+  -ms-user-select: none; 
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.header1_2{
+  width: 70%;
+  margin-right: 0;
+  padding-right: 3rem;
+}
+.header1_3 {
+  width: 20%;
+  padding-right: 30px;
+}
+.header1_3_1{
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 3;
+  color: white;
+}
+.header_auth:hover {
+  color: #2D3040;
+  cursor: pointer;
+}
+.header_url {
+  color: white;
+}
+.header_url:hover {
+  color: #2D3040;
+  cursor: pointer;
+  text-decoration-line: none;
+}
+.logo{
+  color:white;
+  font-size: x-large;
+  text-align: center;
+}
+
+/* 폰트 설정 - 본문 : 나눔스퀘어 */
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css); 
+ 
+/* 폰트 설정 - 헤더 & 메뉴 : G마켓 */
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: 'NanumSquare', sans-serif;
+}
+
+/* custom css */
+.button_team2_empty{
+  background-color: #FFFFFF;
+  border-radius: 7px;
+  margin-left: 5px;
+  color: #00AAF0;
+  font-weight: bold;
+  border-color: #00AAF0;
+  border-width: 1px;
+  border-style: solid;
+  padding: 3px 10px 3px 10px;
+  font-size: small;
+}
+.button_team2_empty:hover {
+  background-color: #00AAF0;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  border-style: solid;
+  text-decoration: none;
+}
+
+.button_team2_fill{
+  background-color: #00AAF0;
+  border-radius: 7px;
+  margin-left: 5px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-width: 1px;
+  border-color: #00AAF0;
+  border-style: solid;
+  padding: 3px 10px 3px 10px;
+  font-size: small;
+}
+
+.button_team2_fill:hover {
+  background-color: #FFFFFF;
+  color: #00AAF0;
+  border-color: #00AAF0;
+  border-style: solid;
+}
+
+.link_team2{
+  color:white;
+}
+.link_team2:hover{
+  color:#00AAF0;
+  text-decoration-line: none;
+}
+
+/* Autosizer scroll */
+.ReactVirtualized__List::-webkit-scrollbar {
+  width: 10px;
+}
+.ReactVirtualized__List::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.ReactVirtualized__List::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+/* Toasts 알림 */ 
+.toast {
+    font-size: large !important;
+    font-weight: bold !important;
+    color: #2D3040 !important;
+    display: inline-block !important;
+    background-color: #cff1ff !important;
+    box-shadow: 0 0 3px -4px rgba(0, 0, 0, 0.16) !important;
+    opacity: 0.7 !important;
+    width: 35rem !important;
+    line-height: 3rem !important;
+    max-height: 4rem !important;
+    margin-top: 100px !important;
+}

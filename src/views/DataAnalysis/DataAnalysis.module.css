@@ -1,0 +1,30 @@
+.DataAnalysis{
+  display: flex;
+  flex-direction: column;
+  margin: 1% 1% 1% 1%;
+}
+.DataAnalysis_row1{
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+}
+.DataAnalysis_row2{
+  display: flex;
+  flex-direction: row;
+
+  height: 400px;
+  margin-top: 1%;
+}
+.DataAnalysis_col{
+  width: 50%;
+}
+.DataAnalysis_col_header{
+  height: 10%;
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+  padding-top: 1%;
+}
+.DataAnalysis_col_content{
+  height: 90%;
+}

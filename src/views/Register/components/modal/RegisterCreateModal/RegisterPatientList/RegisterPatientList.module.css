@@ -1,0 +1,44 @@
+/* RegisterPatientList */
+.RegisterPatientList {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 3;
+}
+.RegisterPatientList_header {
+  font-size: medium;
+  font-weight: bold;
+}
+.RegisterPatientList_search {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+  padding: 10px 0 10px 0;
+}
+.RegisterPatientList_search_input {
+  display: flex;
+  font-size: small;
+  flex-grow: 3;
+}
+.RegisterPatientList_search_input_1 {
+  width: 100%;
+  display: flex;
+}
+.RegisterPatientList_search_button {
+  display: flex;
+  flex-grow: 9;
+  align-items: center;
+}
+.RegisterPatientList_content {
+  text-align: center;
+  padding: 10px;
+  height: 100%;
+}
+.RegisterPatientList_content_table {
+  font-size: small;
+  overflow-y: scroll;
+  height: 310px;
+}
+.RegisterPatientList_content_table_tr:hover {
+  background-color: #cff1ff;
+  cursor: pointer;
+}

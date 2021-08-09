@@ -1,0 +1,239 @@
+.ToDoList {
+  height: 100%;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+}
+.ToDoList_header {
+  height: 140px;
+  width: 100%;
+}
+.ToDoList_header_name {
+  margin: 20px;
+  text-decoration: #00aaf0 underline;
+  text-underline-position: under;
+}
+.ToDoList_header_date{
+  margin-left: 20px;
+}
+.ToDoList_header_inputLabel {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  /* border-radius: 10px;
+  border: #00aaf0 1px solid; */
+}
+.ToDoList_header_inputLabel_input {
+  width: 300px;
+  flex-grow: 1;
+}
+.ToDoList_header_inputLabel_input > input,
+.ToDoList_header_inputLabel_input > select {
+  width: 98%;
+  height: 100%;
+  border: #00aaf0 1px solid;
+  border-radius: 5px;
+}
+.ToDoList_header_inputLabel_input input:focus,
+.ToDoList_header_inputLabel_input select {
+  width: 98%;
+  height: 100%;
+  outline: none;
+
+}
+.ToDoList_header_inputLabel_input input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+   /* WebKit browsers */ 
+   color:transparent; 
+}
+.ToDoList_header_inputLabel_button {
+  display: flex;
+  justify-content: flex-end;
+}
+.ToDoList_header_inputLabel_button .button_team2_fill {
+  font-size: medium;
+}
+
+.ToDoList_content {
+  height: 620px;
+  /* border: #00aaf0 1px solid; */
+  display: flex;
+  flex-direction: column;
+}
+.ToDoList_content_header {
+}
+.ToDoList_content_items {
+}
+.ToDoList_content_items_yet_header {
+  height: 40px;
+  font-size: medium;
+  line-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #00aaf0;
+  color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ToDoList_content_items_yet_header_1 {
+
+}
+.ToDoList_content_items_yet_header_2{
+
+}
+.ToDoList_content_items_yet_itmes {
+  height: 360px;
+  overflow-y: scroll;
+}
+.ToDoList_content_items_yet_itmes::-webkit-scrollbar {
+  width: 10px;
+}
+.ToDoList_content_items_yet_itmes::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.ToDoList_content_items_yet_itmes::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+.ToDoList_content_items_yet_item {
+  height: 40px;
+  border-bottom: #00aaf0 1px solid;
+  border-left: #00aaf0 1px solid;
+  border-right: #00aaf0 1px solid;
+  border-radius: 10px;
+  line-height: 40px;
+  padding-left: 20px;
+  padding-right: 5px;
+  display: flex;
+  flex-direction: row;
+  /* cursor: pointer; */
+}
+.ToDoList_content_items_yet_item:hover {
+  background-color: #c9e3fc;
+}
+.ToDoList_content_items_yet_item_content{
+  flex-grow: 11;
+}
+.ToDoList_content_items_yet_item_btns{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.ToDoList_content_items_done_header {
+  height: 40px;
+  font-size: medium;
+  line-height: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  /* border: #00aaf0 2px solid; */
+  border-radius: 10px;
+  color: white;
+  background-color: #0b68d9;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.ToDoList_content_items_done_header_1 {
+
+}
+.ToDoList_content_items_done_header_2{
+
+}
+.ToDoList_content_items_done_itmes {
+  height: 180px;
+  overflow-y: scroll;
+}
+.ToDoList_content_items_done_itmes::-webkit-scrollbar {
+  width: 10px;
+}
+.ToDoList_content_items_done_itmes::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.ToDoList_content_items_done_itmes::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+.ToDoList_content_items_done_item {
+  height: 40px;
+  border-bottom: white 1px solid;
+  border-left: white 1px solid;
+  border-right: white 1px solid;
+  border-radius: 10px;
+  line-height: 40px;
+  padding-left: 20px;
+  padding-right: 5px;
+  background-color: #00aaf0;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  /* cursor: pointer; */
+}
+.ToDoList_content_items_done_item:hover {
+  background-color: #025a80;
+}
+.ToDoList_content_items_done_item_content{
+  flex-grow: 11;
+}
+.ToDoList_content_items_done_item_btns{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  line-height: 0;
+  justify-content: flex-end;
+}
+/* .ToDoList_btn_V{
+  background-color: white;
+  width: 37px;
+  height: 37px;
+  line-height: 0;
+  border-radius: 10px;
+  margin: 1px;
+  border: none;
+} */
+.ToDoList_btn_X{
+  background-color: white;
+  width: 37px;
+  height: 37px;
+  line-height: 0;
+  border-radius: 10px;
+  margin: 1px;
+  border: none;
+  box-shadow : 1px 1px 1px rgba(0, 0, 0, 0.301);
+  transition-duration: 0.3s;
+}
+.ToDoList_btn_X:active {
+  box-shadow : none;
+  margin-left: 3px;
+  margin-top : 3px;
+}
+.ToDoList_btn_X2{
+  background-color: #00aaf0;
+  width: 37px;
+  height: 37px;
+  line-height: 0;
+  border-radius: 10px;
+  margin: 1px;
+  border: none;
+  color: white;
+  box-shadow : 1px 1px 1px rgba(0, 0, 0, 0.301);
+  transition-duration: 0.3s;
+}
+.ToDoList_btn_X2:active {
+  box-shadow : none;
+  margin-left: 3px;
+  margin-top : 3px;
+}
+
+/* .ToDoList_footer {
+  height: 70px;
+  width: 100%;
+  background-color: chocolate;
+} */

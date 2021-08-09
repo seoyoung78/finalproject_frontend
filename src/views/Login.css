@@ -1,0 +1,82 @@
+.box {
+  padding-top: 7rem;
+  height: 850px;
+  display: flex;
+  justify-content: center;
+  /* background-image: url("https://gs.severance.healthcare/_res/yuhs/gs/img/home/img-visual-patient1@2x_210107.jpg"); */
+  background-size: 100% 100%;
+  /* background-color: #EAEAEA; */
+}
+
+/* 로그인 */
+.Login {
+  width: 30rem;
+  margin-right: 4rem;
+  padding-top: 4rem;
+}
+
+.Login_password {
+  font-family: 'Malgun gothic', sans-serif;
+}
+
+.back {
+  background-color: white;
+  padding: 1rem;
+}
+
+.Login_error {
+  color: red;
+  font-size: small;
+}
+.Login_noterror {
+  visibility: hidden;
+  font-size: small;
+}
+
+/* 공지사항 */
+.Board {
+  background-color: white;
+  /* padding: 1rem; */
+}
+.Board_title {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.Board_table {
+  background-color: lightgray;
+  height: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.Board_tr {
+  display: flex;
+  height: 2.5rem;
+  border-bottom: lightgray solid 0.5px;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.Board_tr:hover {
+  background-color: #cff1ff;
+}
+.active {
+  background-color: #cff1ff;
+}
+.Board_content {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.6s ease-in-out;
+  opacity: 0;
+}
+.show {
+  opacity: 1;  
+  padding: 1rem;
+  /* height: 5rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: lightgray solid 0.5px;
+}

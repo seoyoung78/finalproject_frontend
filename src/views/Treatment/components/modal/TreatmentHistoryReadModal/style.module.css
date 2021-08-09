@@ -1,0 +1,176 @@
+.TreatmentHistorymodal > .modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+.TreatmentHistorymodal > .modal > section {
+  width: 900px;
+  /* max-width: 1500px; */
+  height: 820px;
+  
+  margin:0 auto;
+  border-radius: .3rem;
+  background-color: #fff;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-show .3s;
+  overflow: hidden;
+}
+
+.TreatmentHistorymodal > .modal.openModal {
+  display: flex;
+  align-items: center;
+  /* 팝업이 열릴때 스르륵 열리는 효과 */
+  animation: modal-bg-show .3s;
+}
+
+/* TreatmentHistoryRead */
+.TreatmentHistoryRead {
+
+  width: 100%;
+  /* padding-top: 1%; */
+  padding: 10px 10px 0 10px;
+}
+
+.TreatmentHistoryRead_title {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: larger;
+  /* margin-left: 20px; */
+  margin-top: 15px;
+  
+}
+.TreatmentHistoryRead_border {
+  /* display: flex;
+  flex-direction: row; */
+  padding: 10px 10px 30px 10px;
+  font-size: small;
+}
+.TreatmentHistoryRead_1_table {
+  text-align: center;
+  
+  /* height: 100%;
+  width: 750px; */
+}
+.TreatmentHistoryRead_2{
+  height: 250px;
+  /* background-color: burlywood; */
+ margin-top: 15px;
+}
+
+
+.TreatmentHistoryRead_2_Totaltable{
+  font-size: small;
+  overflow-y: scroll;
+  height: 205px;
+
+}
+.TreatmentHistoryRead_2_Totaltable::-webkit-scrollbar {
+  width: 10px;
+}
+
+.TreatmentHistoryRead_2_Totaltable::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.TreatmentHistoryRead_2_Totaltable::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+
+.TreatmentHistoryRead_2_title {
+  font-weight: bold;
+  font-size: medium;
+  /* margin-top: px; */
+  margin-bottom: 10px;
+}
+.TreatmentHistoryRead_2_table {
+  
+  padding: 10px 10px 0 10px;
+  text-align: center;
+  /* height: 20%; */
+  /* width: 750px; */
+  /* border-spacing: 0px; */
+}
+.TreatmentHistoryRead_2_table_thead {
+  background-color: lightgray;
+}
+
+.TreatmentHistoryRead_3{
+ margin-top: 15px;
+
+  
+    /* margin-top: 20px; */
+    height: 200px;
+    /* background-color: chartreuse; */
+}
+.TreatmentHistoryRead_3_title{
+  margin-bottom: 10px;
+
+  font-size: medium;
+}
+.TreatmentHistoryRead_3_Totaltable{
+  font-size: small;
+  /* padding: 10px 10px 0 10px; */
+  overflow-y: scroll;
+  height: 190px;
+
+}
+
+.TreatmentHistoryRead_3_Totaltable::-webkit-scrollbar {
+  width: 10px;
+}
+
+.TreatmentHistoryRead_3_Totaltable::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 10px;
+  background-clip: padding-box;
+  border: 2px solid transparent;
+}
+.TreatmentHistoryRead_3_Totaltable::-webkit-scrollbar-track {
+  background-color: lightgray;
+}
+
+
+
+.TreatmentHistoryRead_3_table{
+  /* overflow-y: auto;
+  height: 150px; */
+
+  text-align: center;
+}
+
+.TreatmentHistoryReadClose{
+  margin-top: 10px;
+  float: right
+}
+
+
+
+
+@keyframes modal-show {
+  from {
+      opacity: 0;
+      margin-top: -50px;
+  }
+  to {
+      opacity: 1;
+      margin-top: 0;
+  }
+}
+@keyframes modal-bg-show {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}

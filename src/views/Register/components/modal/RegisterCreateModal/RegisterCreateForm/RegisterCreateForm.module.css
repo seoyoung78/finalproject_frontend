@@ -1,0 +1,29 @@
+/* RegisterCreateForm */
+.RegisterCreateForm {
+  flex-grow: 1;
+  /* background-color: crimson; */
+  margin: 28px 1% 0 1%;
+  font-size: small;
+}
+.RegisterCreateForm_content {
+  padding: 10px;
+}
+
+.RegisterCreateForm_cal {
+  display: flex;
+  justify-content: center;
+  zoom: 80%;
+}
+.RegisterCreateForm_input {
+}
+.RegisterCreateForm_input_select {
+  width: 100%;
+}
+.RegisterCreateForm_input_textarea {
+  width: 100%;
+  resize: none;
+}
+.RegisterCreateForm_button {
+  display: flex;
+  justify-content: flex-end;
+}

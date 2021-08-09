@@ -1,0 +1,76 @@
+.RegisterStateChange{
+  display: flex;
+  flex-direction: column; 
+  flex-grow: 3;
+}
+.RegisterStateChange_content_table {
+  font-size: small;
+  text-align: center;
+  height: 100px;
+  margin: 15px;
+}
+.RegisterStateChange_content_stateBtn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 210px;
+  margin-top: 40px;
+  padding-top: 50px;
+  border-top: lightgray 1px solid;
+}
+.RegisterStateChange_content_stateBtn_item{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  font-size: larger;
+}
+.RegisterStateChange_content_stateBtn_item_1{
+  width: 200px;
+  height: 180px;
+  color: #00AAF0;
+  font-weight: bold;
+  border-color: #00AAF0;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #FFFFFF;
+  border-radius: 7px;
+}
+.RegisterStateChange_content_stateBtn_item_1:hover{
+  background-color: #00AAF0;
+  color: #FFFFFF;
+  border-color: #FFFFFF;
+  border-style: solid;
+  text-decoration: none;
+}
+.RegisterStateChange_content_stateBtn_item_2{
+  width: 200px;
+  height: 180px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #00AAF0;
+  border-radius: 7px;
+}
+.RegisterStateChange_content_stateBtn_item_2:hover{
+  background-color: #FFFFFF;
+  color: #00AAF0;
+  border-color: #00AAF0;
+  border-style: solid;
+}
+.RegisterStateChange_content_stateBtn_item_3{
+  width: 300px;
+  height: 180px;
+  color: #FFFFFF;
+  font-weight: bold;
+  border-color: #FFFFFF;
+  border-width: 1px;
+  border-style: solid;
+  background-color: #00AAF0;
+  border-radius: 7px;
+}
+.RegisterStateChange_content_stateBtn_item_3:hover{
+  cursor: auto;
+}

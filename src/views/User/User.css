@@ -1,0 +1,118 @@
+.User {
+  padding: 1%;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  /* height: 100%; */
+}
+
+/* 좌측 컴포넌트 */
+.User_left {
+  width: 70%;
+  margin-right: 1%;
+  /* height: 100%; */
+  height: 800px;
+}
+
+/* 우측 컴포넌트 */
+.User_right {
+  width: 29%;
+  padding: 0;
+}
+
+/* title */
+.User_title {
+  font-size: larger;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+/* UserList */
+.UserList {
+  height: 100%;
+}
+
+.UserList_content {
+  padding: 10px;
+  height: 96.8%;
+  font-size: small;
+}
+
+.UserList_content1 {
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+}
+
+.UserList_content1_1 {
+  display: flex;
+  width: 25%;
+}
+
+.UserList_content1_2 {
+  display: flex;
+  cursor: pointer;
+}
+
+.UserList_content1_2 > div:hover {
+  color: #00AAF0;
+}
+
+.UserList_Table {  
+  background-color: lightgray;
+  height: 2.5rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.UserList_tr {
+  display: flex;
+  border-bottom: lightgray solid 0.5px;
+  align-items: center;
+}
+
+.UserList_tr:hover {
+  background-color: #cff1ff;
+  cursor: pointer;
+}
+
+.UserList_tr_block {
+  display: flex;
+  border-bottom: lightgray solid 0.5px;
+  align-items: center;
+  background-color: #F6F6F6;
+}
+
+.UserList_tr_block:hover {
+  background-color: #cff1ff;
+  cursor: pointer;
+}
+
+.UserList_Doctor {
+  color: #15A0BF;
+}
+.UserList_Nurse {
+  color: #F29B30;
+}
+.UserList_Inspector {
+  color: #AEBF2A;
+}
+
+/* UserCreateForm & UserUpdateForm 공통 */
+.User_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: small;
+};
+
+.User_hidden {
+  visibility: hidden;
+}
+
+.User_show {
+  opacity: 1;
+  display: flex;
+  justify-content: end;
+}
